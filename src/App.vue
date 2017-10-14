@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Page from '@/Page'
-import SideCanvas from '@/SideCanvas'
+import Page from 'core/Page'
+import SideCanvas from 'core/SideCanvas'
 
 export default {
   name: 'app',
@@ -19,10 +19,8 @@ export default {
 @import './main.scss';
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   position: relative;
   margin:0 auto;
@@ -31,5 +29,6 @@ export default {
   height:100%; /* IE6: treaded as min-height*/
 
   min-height:100%; /* real browsers */
+  display: flex;
 }
 </style>

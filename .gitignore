@@ -10,4 +10,5 @@ yarn-error.log
 *.ntvs*
 *.njsproj
 *.sln
-ivandwijaya.sublime-project
+*.sublime-workspace
+*.sublime-project

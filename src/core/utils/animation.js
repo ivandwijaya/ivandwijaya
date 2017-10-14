@@ -1,14 +1,13 @@
+import { POLYGON_COLORS as colors } from './constants'
 // CANVAS
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-let cw = canvas.width = window.innerWidth,
+let cw = canvas.width = document.getElementById("side").offsetWidth,
     cx = cw / 2;
-let ch = canvas.height = window.innerHeight,
+let ch = canvas.height = document.getElementById("side").offsetHeight,
     cy = ch / 2;
 
 let requestId = null;
-
-const colors = ["#93DFB8", "#FFC8BA", "#E3AAD6", "#B5D8EB", "#FFBDD8"];
 
 class Particle {
     constructor() {
@@ -71,8 +70,8 @@ function Init() {
         window.cancelAnimationFrame(requestId);
         requestId = null;
     }
-    cw = canvas.width = window.innerWidth, cx = cw / 2;
-    ch = canvas.height = window.innerHeight, cy = ch / 2;
+    cw = canvas.width = document.getElementById("side").offsetWidth, cx = cw / 2;
+    ch = canvas.height = document.getElementById("side").offsetHeight, cy = ch / 2;
     //particles.map((p) => p.update());
     Draw();
 };

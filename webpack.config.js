@@ -39,7 +39,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: '[hash].[ext]'
         }
       }
     ]
@@ -47,7 +47,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      '@': resolve('src/core')
+      'core': resolve('src/core'),
+      'assets': path.resolve('src/assets'),
     }
   },
   devServer: {
