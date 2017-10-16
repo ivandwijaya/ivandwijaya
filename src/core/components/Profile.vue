@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <div class="profile__pic"><img src="~assets/me.jpg" alt="Ivan Dwijaya" title="Ivan Dwijaya"></div>
+    <div class="profile__pic"><img src="~assets/me.jpeg" alt="Ivan Dwijaya" title="Ivan Dwijaya"></div>
     <div class="profile__label">
       <div class="profile__name">Ivan Dwijaya</div>
       <div class="profile__title">Front End Web Developer</div>
@@ -9,13 +9,7 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      msg: 'Profile'
-    }
-  }
-}
+export default {}
 </script>
 
 <style lang="scss">
@@ -44,5 +38,20 @@ export default {
 
 .profile__title {
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 980px) {
+  .profile__title {
+    font-size: 1rem;
+  }
+
+  .profile__name {
+    font-size: 1.4rem;
+  }
+
+  .profile__pic {
+    width: 60px;
+    height: 60px;
+  }
 }
 </style>

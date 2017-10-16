@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <page></page>
-    <side-canvas></side-canvas>
+    <side-canvas v-if="isDesktop"></side-canvas>
   </div>
 </template>
 
@@ -11,7 +11,12 @@ import SideCanvas from 'core/SideCanvas'
 
 export default {
   name: 'app',
-  components: { Page, SideCanvas }
+  components: { Page, SideCanvas },
+  computed: {
+    isDesktop() {
+      return !window.matchMedia("(max-width: 980px)").matches
+    }
+  }
 }
 </script>
 

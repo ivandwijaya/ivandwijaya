@@ -9,11 +9,6 @@ import { SIDE_COLOR } from 'core/utils/constants'
 
 export default {
   name: 'side',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
   mounted () {
     require('core/utils/animation')
   }
@@ -22,7 +17,7 @@ export default {
 
 <style lang="scss">
 #side {
-  flex: 1 0 40%;
+  flex: 1 1 20%;
   background: #dddfd4;
 }
 

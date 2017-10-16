@@ -5,13 +5,15 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .content {
   max-width: 60%;
+
+  @media only screen and (max-width: 980px) {
+   max-width: none;
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 @import '~normalize.css';
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,900');
 
 * {
   box-sizing: inherit;
@@ -67,6 +67,10 @@ a {
   font-weight: bold;
 }
 
-p {
+p, ul {
   font-size: 1.2rem;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.8rem;
 }
