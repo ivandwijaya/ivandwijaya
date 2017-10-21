@@ -81,6 +81,9 @@ if (process.env.NODE_ENV === 'production') {
       sourceMap: false,
       compress: {
         warnings: false
+      },
+      output: {
+        comments: false
       }
     }),
     new webpack.LoaderOptionsPlugin({
