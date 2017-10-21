@@ -48,7 +48,7 @@ class Particle {
 }
 
 let particles = [];
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 40; i++) {
     let p = new Particle();
     particles.push(p)
 }
