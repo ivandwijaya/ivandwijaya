@@ -4,6 +4,12 @@ dist/
 npm-debug.log
 yarn-error.log
 
+# Firebase related files
+.firebaserc
+database.rules.json
+firebase.json
+storage.rules
+
 # Editor directories and files
 .idea
 *.suo
